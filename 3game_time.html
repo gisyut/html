@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 제목</title>
+</head>
+<body>
+    <header style="text-align:center;">
+        <!-- 각각의 h1에 id 추가 -->
+        <h1 id="past" style="margin-top: 250px; font-size:50px; cursor: pointer;">기술이 발전되기 전의 과거</h1>
+        <h1 id="present" style="margin-top: 100px; font-size:50px; cursor: pointer;">기술이 발달된 현재</h1>
+        <h1 id="future" style="margin-top: 100px; font-size:50px; cursor: pointer;">미래의 기술</h1>
+    </header>
+
+    <main>
+    </main>
+    <footer>
+    </footer>
+
+    <script>
+        // 각 h1 요소에 클릭 이벤트 리스너 추가
+        document.getElementById("past").addEventListener("click", function() {
+            // 클릭 시 다른 홈페이지로 이동
+            window.location.href = 'past.html';
+        });
+
+        document.getElementById("present").addEventListener("click", function() {
+            window.location.href = 'present.html';
+        });
+
+        document.getElementById("future").addEventListener("click", function() {
+            window.location.href = 'future.html';
+        });
+    </script>
+</body>
+</html>
